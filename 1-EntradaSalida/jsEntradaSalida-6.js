@@ -15,9 +15,9 @@ function sumar()
 	//parseInt(numero2);
 	//(numero1 + numero2) = resultado;
 	
-	resultado = parseInt(numero1,10)+parseInt(numero2,10);
+	resultado = parseInt(numero1)+parseInt(numero2);
 	
-	alert("El resultado es: " + parseInt(resultado,10));
+	alert("El resultado es: " + parseInt(resultado));
 
 
 }

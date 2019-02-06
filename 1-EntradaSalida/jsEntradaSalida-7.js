@@ -11,7 +11,13 @@ function sumar()
 	numero1 = numeroUno.value;
 	numero2 = numeroDos.value;
 
-	resultado = (parseInt(numero1) + parseInt(numero2));
+	parseInt(numero1);
+	parseInt(numero2);
+
+	//resultado = (numero1 + numero2);
+	resultado = (parseInt(numero1) + parseInt(numero2))
+
+
 	alert("La suma es: " + resultado);	
 }
 
@@ -24,7 +30,11 @@ function restar()
 	numero1 = numeroUno.value;
 	numero2 = numeroDos.value;
 
-	resultado = (parseInt(numero1)-parseInt(numero2));
+	parseInt(numero1);
+	parseInt(numero2);
+
+	resultado = (numero1 - numero2);
+
 	alert("La resta es: " + resultado);	
 }
 
@@ -37,7 +47,11 @@ function multiplicar()
 	numero1 = numeroUno.value;
 	numero2 = numeroDos.value;
 
-	resultado = (parseInt(numero1)*parseInt(numero2));
+	parseInt(numero1);
+	parseInt(numero2);
+
+	resultado = (numero1 * numero2);
+
 	alert("La multiplicacion es: " + resultado);	
 }
 
@@ -50,7 +64,11 @@ function dividir()
 	numero1 = numeroUno.value;
 	numero2 = numeroDos.value;
 
-	resultado = (parseInt(numero1)/parseInt(numero2));
+	parseInt(numero1);
+	parseInt(numero2);
+
+	resultado = (numero1 / numero2),
+
 	alert("La division es: " + resultado);	
 }
 

@@ -11,7 +11,12 @@ function SacarResto()
 	dividendo = numeroDividendo.value;
 	divisor = numeroDivisor.value;
 
-	resultado = (parseInt (dividendo) % parseInt(divisor));
+	parseInt(dividendo)
+	parseInt(divisor)
+
+	resultado = (dividendo % divisor)
+
+	//resultado = (parseInt (dividendo) % parseInt(divisor));
 	alert("El resto es: " + resultado);
 
 }
