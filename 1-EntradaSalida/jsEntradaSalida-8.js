@@ -6,17 +6,16 @@ function SacarResto()
 {
 	var dividendo;
 	var divisor;
-	var resultado;
+	var resto;
 
 	dividendo = numeroDividendo.value;
 	divisor = numeroDivisor.value;
 
-	parseInt(dividendo)
-	parseInt(divisor)
+	dividendo = parseInt(dividendo);
+	divisor = parseInt(divisor);
 
-	resultado = (dividendo % divisor)
+	resto = (dividendo % divisor);
 
-	//resultado = (parseInt (dividendo) % parseInt(divisor));
-	alert("El resto es: " + resultado);
+	alert("El resto es " + resto);
 
 }

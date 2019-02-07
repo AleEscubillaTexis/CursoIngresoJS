@@ -11,13 +11,12 @@ function sumar()
 	numero1 = numeroUno.value;
 	numero2 = numeroDos.value;
 
-	//parseInt(numero1);
-	//parseInt(numero2);
-	//(numero1 + numero2) = resultado;
-	
-	resultado = parseInt(numero1)+parseInt(numero2);
-	
-	alert("El resultado es: " + parseInt(resultado));
+	numero1 = parseInt(numero1);
+	numero2 = parseInt(numero2);
+
+	resultado = (numero1 + numero2);
+
+	alert("La suma es " + resultado);
 
 
 }
