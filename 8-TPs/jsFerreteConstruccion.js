@@ -8,24 +8,19 @@ function Rectangulo ()
 {
 	var largoTerreno;
 	var anchoTerreno;
-	var suma;
 	var alambre;
+	var perimetro;
 
 	largoTerreno = Largo.value;
 	anchoTerreno = Ancho.value;
 
 	largoTerreno = parseInt(largoTerreno);
 	anchoTerreno = parseInt(anchoTerreno);
-	
-	largoTerreno = (largoTerreno * 2);
-	anchoTerreno = (anchoTerreno * 2);
-	console.log(largoTerreno);
-	console.log(anchoTerreno);
 
-	suma = (largoTerreno + anchoTerreno);
-	console.log(suma);
+	perimetro = ((largoTerreno + anchoTerreno) * 2);
+	console.log(perimetro);
 
-	alambre = suma * 3;
+	alambre = perimetro * 3;
 	console.log(alambre);
 
 	alert("La cantidad de alambre a comprar es de " + alambre + "m");
@@ -49,9 +44,9 @@ function Materiales ()
 {
 	var largoTerreno;
 	var anchoTerreno;
+	var perimetro;
 	var cemento;
 	var cal;
-	var sumaTerreno;
 	var bolsasCemento;
 	var bolsasCal;
 	
@@ -64,16 +59,11 @@ function Materiales ()
 	largoTerreno = parseInt(largoTerreno);
 	anchoTerreno = parseInt(anchoTerreno);
 	
-	largoTerreno = (largoTerreno * 2);
-	anchoTerreno = (anchoTerreno * 2);
-	console.log(largoTerreno);
-	console.log(anchoTerreno);
+	perimetro = ((largoTerreno + anchoTerreno) * 2);
+	console.log(perimetro);
 
-	sumaTerreno = (largoTerreno + anchoTerreno);
-	console.log(sumaTerreno);
-
-	bolsasCemento = (sumaTerreno * cemento);
-	bolsasCal = (sumaTerreno * cal);
+	bolsasCemento = (perimetro * cemento);
+	bolsasCal = (perimetro * cal);
 	console.log(bolsasCemento);
 	console.log(bolsasCal);
 	alert("Se necesitan " + bolsasCemento + " bolsas de cemento y " + bolsasCal + " bolsas de cal");
