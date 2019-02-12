@@ -10,63 +10,67 @@ function Sumar ()
 	var precio3;
 	var resultado;
 
-
 	precio1 = PrecioUno.value;
 	precio2 = PrecioDos.value;
 	precio3 = PrecioTres.value;
 
-	precio1 = parseint(precio1);
-	precio2 = parseint(precio2);
-	precio3 = parseint(precio3);
+	precio1 = parseInt(precio1);
+	precio2 = parseInt(precio2);
+	precio3 = parseInt(precio3);
 
-	resultado = (parseInt(precio1) + parseInt(precio2) + parseint (precio3))
-
-	//resultado = (precio1 + precio2 + precio3);
-
-	alert("La suma es: " + resultado);
-
-
+	resultado = (precio1 + precio2 + precio3);
 	
+	alert("La suma es " + resultado);
+	
+	//suma = (parseInt(precio1) + parseInt(precio2 + parseInt (precio3));
+	//console.log ("La suma es " + resultado)
 }
 function Promedio () 
 {
 	var precio1;
 	var precio2;
 	var precio3;
-	var resultado;
-
+	var promedio;
 
 	precio1 = PrecioUno.value;
 	precio2 = PrecioDos.value;
 	precio3 = PrecioTres.value;
 
-	precio1 = parseint(precio1);
-	precio2 = parseint(precio2);
-	precio3 = parseint(precio3);
+	precio1 = parseInt(precio1);
+	precio2 = parseInt(precio2);
+	precio3 = parseInt(precio3);
 
-	resultado = ((precio1 + precio2 + precio3) / 3);
-	
-	alert("El promedio es: " + resultado);
+	promedio = (precio1 + precio2 + precio3) / 3;
+
+	alert("El promedio es: " + promedio);
 }
 function PrecioFinal () 
 {
+	
 	var precio1;
 	var precio2;
 	var precio3;
-	var resultado;
-
+	var suma;
+	var iva;
+	var precioFinal;
 
 	precio1 = PrecioUno.value;
 	precio2 = PrecioDos.value;
 	precio3 = PrecioTres.value;
 
-	precio1 = parseint(precio1);
-	precio2 = parseint(precio2);
-	precio3 = parseint(precio3);
+	precio1 = parseInt(precio1);
+	precio2 = parseInt(precio2);
+	precio3 = parseInt(precio3);
 
-	resultado = (((precio1 + precio2 + precio3) * 21) / 100);
-	
-	alert("El precio final es: " + resultado);
+	suma = (precio1 + precio2 + precio3);
+	console.log(suma);
 
+	iva = ((suma * 21) / 100);
+	console.log(iva);
+
+	precioFinal = (suma + iva);
+	console.log(precioFinal);
+
+	alert("El precio final el " + precioFinal);
 
 }
