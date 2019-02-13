@@ -11,10 +11,7 @@ function mostrar()
 	edadIngresada = parseInt(edadIngresada);
 
 	
-	if ((edadIngresada < 18) && (estadoIngresado != "Soltero"))
-	{}
-	
-	if ((estadoIngresado = "Soltero") && (edadIngresada >= 18))
+	if ((edadIngresada >= 18) && (estadoIngresado == "Soltero"))
 	{
 		alert("Es soltero y no es menor");
 	}
