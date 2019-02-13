@@ -1,0 +1,13 @@
+
+GITHUB
+
+git clone(link)
+cd CursoIngresoJS/
+git status
+git add .
+git config --global user.mail
+git config --global user.mail
+git status
+git commit -m "texto"
+git push
+user
