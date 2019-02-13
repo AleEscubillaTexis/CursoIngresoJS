@@ -8,11 +8,17 @@ function mostrar()
 	edadIngresada = parseInt(edadIngresada);
 
 	if (edadIngresada >= 18)
-		{alert("Usted es mayor de edad");}
+		{
+			alert("Usted es mayor de edad");
+		}
 	else if (edadIngresada >= 13 && edadIngresada <= 17)
-		{alert("Usted es adolescente");}
+		{
+			alert("Usted es adolescente");
+		}
 	else 
-		{alert("Usted es un niño");}
+		{
+			alert("Usted es un niño");
+		}
 
 
 
