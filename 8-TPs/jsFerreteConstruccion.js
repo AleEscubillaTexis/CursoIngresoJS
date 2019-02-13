@@ -29,46 +29,48 @@ function Rectangulo ()
 function Circulo () 
 {
 	var radioTerreno;
-	var resultado;
+	var diametro;
+	var circunferencia;
+	var alambre;
 
 	radioTerreno = Radio.value;
 
 	radioTerreno = parseInt(radioTerreno);
 
-	resultado = (radioTerreno * 3);
+	diametro = (radioTerreno * 2);
+	console.log(diametro);
+	circunferencia = (diametro * 3.14);
+	console.log(circunferencia);
+	alambre = (circunferencia * 3);
 
-	alert("La cantidad de alambre a comprar es de " + resultado + "m");
+
+	alert("La cantidad de alambre a comprar es de " + alambre + "m");
 
 }
 function Materiales () 
 {
 	var largoTerreno;
 	var anchoTerreno;
-	var perimetro;
-	var cemento;
-	var cal;
+	var area;
 	var bolsasCemento;
 	var bolsasCal;
 	
 
-	cemento = 2;
-	cal = 3;
 	largoTerreno = Largo.value;
 	anchoTerreno = Ancho.value;
 
 	largoTerreno = parseInt(largoTerreno);
 	anchoTerreno = parseInt(anchoTerreno);
 	
-	perimetro = ((largoTerreno + anchoTerreno) * 2);
-	console.log(perimetro);
+	area = (largoTerreno * anchoTerreno);
+	console.log(area);
 
-	bolsasCemento = (perimetro * cemento);
-	bolsasCal = (perimetro * cal);
+	bolsasCemento = (area * 2);
+	bolsasCal = (area * 3);
 	console.log(bolsasCemento);
 	console.log(bolsasCal);
 	alert("Se necesitan " + bolsasCemento + " bolsas de cemento y " + bolsasCal + " bolsas de cal");
 
-	
 
 	
 	
