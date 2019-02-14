@@ -11,22 +11,22 @@ function mostrar()
 
 	if (edadIngresada >= 18)
 		{
-			alert("Usted es mayor de edad");
+			mensaje = "mayor de edad";
 		}
 	else
 		{ 
 			if (edadIngresada >= 13 && edadIngresada <= 17)
 			{
-				alert("Usted es adolescente");
+				mensaje = "un adolescente";
 			}	
 			else 
 			{
-			alert("Usted es un niño");
+				mensaje = "un niño";
 			}
 		}
 	
 
-
+		alert("Usted es " + mensaje);
 
 
 
