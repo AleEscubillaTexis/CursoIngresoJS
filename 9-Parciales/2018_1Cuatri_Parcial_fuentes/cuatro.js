@@ -5,45 +5,48 @@ function mostrar()
 	var descuento;
 	var descuentoAdicional;
 	var recargo;
-	var precioFinal;
 	var pago;
+	var precioFinal;
 
-	cantidad = prompt("Ingrese la cantidad de productos");
-	precio = prompt("Ingrese el precio de la compra");
-	pago = prompt ("Ingrese el medio de pago");
+	cantidad = prompt("Ingrese la cantidad de productos. Si lleva mas de 2 productos se le hara un 10% de descuento.");
+	precio = prompt("Ingrese el precio de la compra. Si hace una compra mayor a $2000 se le hara un %15 de descuento adicional.");
+	pago = prompt ("Ingrese el medio de pago. Si paga con tarjeta se le hara un recargo del 10%.");
 	
 	cantidad = parseInt(cantidad);
 	precio = parseInt(precio);
 
-	
+	precio = (cantidad * precio);
+	console.log(precio);
+
+
+	if (cantidad == 1)
+	{
+		precioFinal = precio;
+	}		
+
 	if (cantidad >= 2)
 	{	
 		descuento = ((precio * 10) / 100);
+		console.log(descuento);
 		precioFinal = (precio - descuento);
-
-		//alert("Se compraron " + cantidad + " productos y se realizo un descuento del 10%. El precio a pagar es de $ " + precioFinal);
+		console.log(precioFinal);
 
 		 if (precio >= 2000)
 		{
-			descuentoAdicional = ((precio * 15) / 100);
-			precioFinal = (precio - descuentoAdicional)
-			//alert("La compra supero los $2000 y se realiza un descuento adicional del 15%. El precio a pagar es de $" + precioFinal);
+			descuentoAdicional = ((precioFinal * 15) / 100);
+			console.log(descuentoAdicional);
+			precioFinal = (precioFinal - descuentoAdicional);
+			console.log(precioFinal);
 		}			
 	}	
 	
 	if (pago == "tarjeta")
 		{
-			recargo = ((precio * 10) / 100);
-			precioFinal = (precio + recargo);
-			//alert("Al pagar con tarjeta se le agrega un 10% de recargo. El precio a pagar es de $" + precioFinal);
+			recargo = ((precioFinal * 10) / 100);
+			console.log(recargo);
+			precioFinal = (precioFinal + recargo);
 		}
 
 	alert("Se compro " + cantidad + " producto/s. El precio final es de $" + precioFinal);	
-
-
-	
-	
-
-
 
 }
