@@ -11,4 +11,83 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 function CalcularPrecio () 
 {
  	
+ 	var precio;
+ 	var cantidad;
+ 	var marcaLampara;
+ 	var descuento;
+ 	var ingresosBrutos;
+ 	var precioFinal;
+
+ 	marcaLampara = Marca.value;
+ 	cantidad = Cantidad.value;
+ 	cantidad = parseInt(cantidad);
+
+	
+	precio = 35;
+
+	precio = (precio * cantidad);
+
+ 	if (cantidad >= 6)
+ 	{
+ 		descuento = ((precio * 50) / 100);
+ 		precioFinal = (precio - descuento);
+ 	}
+
+ 	if ((cantidad == 5) && (marcaLampara == "ArgentinaLuz"))
+ 	{
+ 		descuento = ((precio * 40) / 100);
+ 		precioFinal = (precio - descuento);
+ 	}
+ 	else
+ 		{
+ 			if (marcaLampara =! "ArgentinaLuz")
+ 			{
+ 				descuento = ((precio * 30) / 100);
+ 				precioFinal = (precio - descuento);
+ 			}
+ 		}
+
+ 	if ((cantidad == 4) && ((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas")))
+ 	{
+ 		descuento = ((precio * 25) / 100);
+ 		precioFinal = (precio - descuento);
+ 	}
+ 	else
+ 	{
+ 		if ((marcaLampara =! "ArgentinaLuz") && (marcaLampara =! "FelipeLamparas"))
+ 		{
+ 			descuento = ((precio * 20) / 100);
+ 			precioFinal = (precio - descuento);
+ 		}
+ 	}
+
+ 	if ((cantidad == 3) && (marcaLampara == "ArgentinaLuz"))
+ 	{
+ 		descuento = ((precio * 15) / 100);
+ 		precioFinal = (precio - descuento);
+ 	}
+ 	else
+ 	{
+ 		if (marcaLampara == "FelipeLamparas")
+ 		{
+ 			descuento = ((precio * 10) / 100);
+ 			precioFinal = (precio - descuento);
+ 		}
+ 		else
+ 		{
+ 			descuento = ((precio * 5) / 100);
+ 			precioFinal = (precio - descuento);
+ 		}
+ 	}
+
+ 	precioDescuento.value = precioFinal;
+
+ 	/*if (precioFinal > 120)
+ 	{
+ 		ingresosBrutos = ((precioFinal * 10) / 100);
+ 		precioFinal = (precio + ingresosBrutos);
+
+ 		alert("IIBB. Usted pago $" + precioFinal + ", siendo $" + ingresosBrutos + "el impuesto que se pago.");
+ 	}*/
+
 }
