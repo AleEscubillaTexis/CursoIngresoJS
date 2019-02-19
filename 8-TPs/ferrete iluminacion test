@@ -1,0 +1,11 @@
+CANT   PRECIO*CANT   LAMPARA     DESCUENTO     PRECIO FINAL
+
+=> 6   35*6 = 210    X           50% = 105     $105
+== 5   35*5 = 175    ARGLUZ      40% = 70      $105
+== 5   35*5 = 175    OTRA MARCA  30% = 52.2    error tiene que dar 52,5 creo
+== 4   35*4 = 140    ARGLUZ/FL   25% = 35      $105
+== 4   35*4 = 140    OTRA MARCA  20% = 28      $112
+== 3   35*3 = 105    ARGLUZ      15% = 15.75
+== 3   35*3 = 105    FL          10% = 10.5
+== 3   35*3 = 105    OTRA MARCA  05% = 5.25
+

@@ -45,58 +45,62 @@ function CalcularPrecio ()
 	 		console.log(precioFinal);
 	 	}
 	 	else
-	 		{
-	 			if (marcaLampara =! "ArgentinaLuz")
-	 			{
-	 				descuento = ((precio * 30) / 100);
-	 				console.log(descuento);
-	 				precioFinal = (precio - descuento);
-	 				console.log(precioFinal);
-	 			}
-	 		}
-
-	 	if ((cantidad == 4) && ((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas")))
-	 	{
-	 		descuento = ((precio * 25) / 100);
-	 		console.log(descuento);
-	 		precioFinal = (precio - descuento);
-	 		console.log(precioFinal);
-	 	}
-	 	else
-	 	{
-	 		if ((marcaLampara =! "ArgentinaLuz") && (marcaLampara =! "FelipeLamparas"))
-	 		{
-	 			descuento = ((precio * 20) / 100);
-	 			console.log(descuento);
-	 			precioFinal = (precio - descuento);
-	 			console.log(precioFinal);
-	 		}
-	 	}
-
-	 	if ((cantidad == 3) && (marcaLampara == "ArgentinaLuz"))
-	 	{
-	 		descuento = ((precio * 15) / 100);
-	 		console.log(descuento);
-	 		precioFinal = (precio - descuento);
-	 		console.log(precioFinal);
-	 	}
-	 	else
-	 	{
-	 		if (marcaLampara == "FelipeLamparas")
-	 		{
-	 			descuento = ((precio * 10) / 100);
-	 			console.log(descuento);
-	 			precioFinal = (precio - descuento);
-	 			console.log(precioFinal);
-	 		}
-	 		else
-	 		{
-	 			descuento = ((precio * 5) / 100);
-	 			
-	 			precioFinal = (precio - descuento);
-	 			console.log(precioFinal);
-	 		}
-	 	}
+		{
+		 	if (marcaLampara =! "ArgentinaLuz")
+		 	{
+		 		descuento = ((precio * 30) / 100);
+		 		console.log(descuento);
+		 		precioFinal = (precio - descuento);
+		 		console.log(precioFinal);
+		 	}
+		 	else
+		 	{
+		 		if ((cantidad == 4) && ((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas")))
+		 		{
+			 		descuento = ((precio * 25) / 100);
+			 		console.log(descuento);
+			 		precioFinal = (precio - descuento);
+			 		console.log(precioFinal);
+		 		}
+		 		else
+		 		{
+			 		if ((marcaLampara =! "ArgentinaLuz") && (marcaLampara =! "FelipeLamparas"))
+					{
+						descuento = ((precio * 20) / 100);
+						console.log(descuento);
+						precioFinal = (precio - descuento);
+						console.log(precioFinal);
+					}
+					else
+					{
+						if ((cantidad == 3) && (marcaLampara == "ArgentinaLuz"))
+						{
+							descuento = ((precio * 15) / 100);
+							console.log(descuento);
+							precioFinal = (precio - descuento);
+							console.log(precioFinal);
+						}
+						else
+						{
+							if (marcaLampara == "FelipeLamparas")
+							{
+								descuento = ((precio * 10) / 100);
+								console.log(descuento);
+								precioFinal = (precio - descuento);
+								console.log(precioFinal);
+							}
+							else
+							{
+								descuento = ((precio * 5) / 100);
+					 			console.log(descuento);
+								precioFinal = (precio - descuento);
+								console.log(precioFinal);
+							}
+		 				}
+					}	
+		 		}
+		 	}				
+	 	}  
 	 }	
 
  	precioDescuento.value = precioFinal;
