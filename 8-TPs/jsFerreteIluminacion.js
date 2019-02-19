@@ -22,95 +22,74 @@ function CalcularPrecio ()
  	cantidad = Cantidad.value;
  	cantidad = parseInt(cantidad);
 
-	
-	precio = 35;
-
-	precio = (precio * cantidad);
+	precio = (35 * cantidad);
 	console.log(precio);
 
  	if (cantidad >= 6)
  	{
- 		descuento = ((precio * 50) / 100);
- 		console.log(descuento);
- 		precioFinal = (precio - descuento);
- 		console.log(precioFinal);
- 	}
+ 		descuento = 50
+ 	}//if (cantidad >= 6)
  	else
  	{
-	 	if ((cantidad == 5) && (marcaLampara == "ArgentinaLuz"))
+	 	if (cantidad == 5)
 	 	{
-	 		descuento = ((precio * 40) / 100);
-	 		console.log(descuento);
-	 		precioFinal = (precio - descuento);
-	 		console.log(precioFinal);
-	 	}
-	 	else
-		{
-		 	if (marcaLampara =! "ArgentinaLuz")
-		 	{
-		 		descuento = ((precio * 30) / 100);
-		 		console.log(descuento);
-		 		precioFinal = (precio - descuento);
-		 		console.log(precioFinal);
+	 		if 
+	 			(marcaLampara == "ArgentinaLuz")
+	 			descuento = 40
+	 		
+	 		else 
+	 		{
+		 		descuento = 30
 		 	}
-		 	else
+	 	} //if (cantidad == 5)
+		else
+		{
+		 	if (cantidad == 4) 
 		 	{
-		 		if ((cantidad == 4) && ((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas")))
-		 		{
-			 		descuento = ((precio * 25) / 100);
-			 		console.log(descuento);
-			 		precioFinal = (precio - descuento);
-			 		console.log(precioFinal);
-		 		}
+		 		if
+		 			((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas"))
+			 		descuento = 25	
 		 		else
 		 		{
-			 		if ((marcaLampara =! "ArgentinaLuz") && (marcaLampara =! "FelipeLamparas"))
+		 			descuento = 20
+		 		}
+		 	}//(cantidad == 4) 
+			else
+			{
+				if (cantidad == 3)
+				{
+					if (marcaLampara == "ArgentinaLuz")
 					{
-						descuento = ((precio * 20) / 100);
-						console.log(descuento);
-						precioFinal = (precio - descuento);
-						console.log(precioFinal);
-					}
+						descuento = 15
+					}	
 					else
 					{
-						if ((cantidad == 3) && (marcaLampara == "ArgentinaLuz"))
+						if (marcaLampara == "FelipeLamparas")
 						{
-							descuento = ((precio * 15) / 100);
-							console.log(descuento);
-							precioFinal = (precio - descuento);
-							console.log(precioFinal);
+							descuento = 10
+						
 						}
 						else
 						{
-							if (marcaLampara == "FelipeLamparas")
-							{
-								descuento = ((precio * 10) / 100);
-								console.log(descuento);
-								precioFinal = (precio - descuento);
-								console.log(precioFinal);
-							}
-							else
-							{
-								descuento = ((precio * 5) / 100);
-					 			console.log(descuento);
-								precioFinal = (precio - descuento);
-								console.log(precioFinal);
-							}
-		 				}
-					}	
-		 		}
-		 	}				
-	 	}  
-	 }	
+							descuento = 5
+						}
+					}
+		 		}//(cantidad == 3)			
+		 	}
+		}					  
+	}	
 
+	descuento = ((precio * descuento) / 100);
+	console.log(descuento);
+	precioFinal = (precio - descuento);
  	precioDescuento.value = precioFinal;
 
- 	/*if (precioFinal > 120)
+ 	if (precioFinal > 120)
  	{
  		ingresosBrutos = ((precioFinal * 10) / 100);
  		precioFinal = (precio + ingresosBrutos);
 
  		alert("IIBB. Usted pago $" + precioFinal + ", siendo $" + ingresosBrutos + "el impuesto que se pago.");
- 	}*/
+ 	}
 
 }
