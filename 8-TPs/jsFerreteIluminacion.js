@@ -25,7 +25,64 @@ function CalcularPrecio ()
 	precio = (35 * cantidad);
 	console.log(precio);
 
- 	if (cantidad >= 6)
+ 	switch(cantidad)
+ 	{
+ 		case 6:
+ 				descuento = 50;
+ 				break;
+ 		case 5:
+ 			if (marcaLampara == "ArgentinaLuz")
+ 			{
+	 			descuento = 40
+ 			}
+	 		else 
+	 		{
+		 		descuento = 30
+		 	}
+		 	break;
+		case 4:
+			if
+		 		((marcaLampara == "ArgentinaLuz") || (marcaLampara == "FelipeLamparas"))
+			 	descuento = 25	
+		 	else
+		 	{
+		 		descuento = 20
+		 	}
+		 	break;
+		case 3:
+			if (marcaLampara == "ArgentinaLuz")
+			{
+				descuento = 15
+			}	
+			else
+			{
+				if (marcaLampara == "FelipeLamparas")
+				{
+					descuento = 10
+						
+				}
+				else
+				{
+					descuento = 5
+				}
+			}
+			break;
+ 	}
+
+ 	descuento = ((precio * descuento) / 100);
+	console.log(descuento);
+	precioFinal = (precio - descuento);
+ 	precioDescuento.value = precioFinal;
+
+ 	if (precioFinal >= 120)
+ 	{
+ 		ingresosBrutos = ((precioFinal * 10) / 100);
+ 		precioFinal = (precioFinal + ingresosBrutos);
+
+ 		alert("IIBB. Usted pago $" + precioFinal + ", siendo $" + ingresosBrutos + " el impuesto que se pago.");
+ 	}
+
+ 	/*if (cantidad >= 6)
  	{
  		descuento = 50
  	}//if (cantidad >= 6)
@@ -84,12 +141,12 @@ function CalcularPrecio ()
 	precioFinal = (precio - descuento);
  	precioDescuento.value = precioFinal;
 
- 	if (precioFinal > 120)
+ 	if (precioFinal >= 120)
  	{
  		ingresosBrutos = ((precioFinal * 10) / 100);
- 		precioFinal = (precio + ingresosBrutos);
+ 		precioFinal = (precioFinal + ingresosBrutos);
 
- 		alert("IIBB. Usted pago $" + precioFinal + ", siendo $" + ingresosBrutos + "el impuesto que se pago.");
- 	}
+ 		alert("IIBB. Usted pago $" + precioFinal + ", siendo $" + ingresosBrutos + " el impuesto que se pago.");
+ 	}*/
 
 }
