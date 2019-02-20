@@ -47,6 +47,34 @@ function mostrar()
 			precioFinal = (precioFinal + recargo);
 		}
 
-	alert("Se compro " + cantidad + " producto/s. El precio final es de $" + precioFinal);	
+	alert("Se compro " + cantidad + " producto/s. El precio final es de $" + precioFinal);
+
+
+	/*switch (cantidad)
+	{
+		case 1:
+			precioFinal = precio;
+			break;
+
+		case 2:
+			descuento = ((precio * 10) / 100);
+			precioFinal = (precio - descuento);
+			console.log(precioFinal);
+			if (precio >= 2000)
+			{
+				descuentoAdicional = ((precioFinal * 15) / 100);
+				precioFinal = (precioFinal - descuentoAdicional);
+				console.log(precioFinal);
+			}
+	}
+			
+	if (pago == "tarjeta")
+	{
+		recargo = ((precioFinal * 10) / 100);
+		console.log(recargo);
+		precioFinal = (precioFinal + recargo);
+	}
+
+	alert("Se compro " + cantidad + " producto/s. El precio final es de $" + precioFinal);*/
 
 }
