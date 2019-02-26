@@ -1,0 +1,47 @@
+apuntes
+
+
+
+26/02
+
+contadores ---> variable + una constante
+
+	cont = 0;
+
+	while(true);
+	{
+		contador = contador + 1;
+		contador += 1;
+		contador ++ 1;
+		++ contador;
+		contador de pos incremento ++: tomar el valor y sumar
+	}
+	
+acumulador ---> variable + variable
+	
+	numero = prompt();
+	numero = parseInt();
+	acumulador = acumulador + numero
+
+	while()
+	{
+		
+		acumulador = acumulador + numero;
+		acumulador += numero;
+		acumulador *= numero;
+
+
+		acumulador/contador = promedio
+	}
+bandera ---> asignar a la variable con un valor, cuando ocurre ese valor; me pregunto cada vez que quiera si eso paso
+
+	pongo una var con un valor
+
+	bandera = true;
+	while()
+	{
+		if(bandera)
+		{
+			bandera = false
+		}
+	}
