@@ -12,7 +12,7 @@ contadores ---> variable + una constante
 	{
 		contador = contador + 1;
 		contador += 1;
-		contador ++ 1;
+		contador ++;
 		++ contador;
 		contador de pos incremento ++: tomar el valor y sumar
 	}
@@ -45,3 +45,11 @@ bandera ---> asignar a la variable con un valor, cuando ocurre ese valor; me pre
 			bandera = false
 		}
 	}
+
+
+
+
+
+	NaN == NaN es false
+
+	confirm: se pone como el prompt, es una ventana donde el usuario puede seleccionar si/no
