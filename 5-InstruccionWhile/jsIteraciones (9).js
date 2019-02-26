@@ -5,13 +5,21 @@ function mostrar()
 	// declarar variables
 	
 	var respuesta='si';
+	var max;
+	var min;
+	var bandera = true
+
 
 	while(respuesta!='no')
 	{
 		
 	
 	}
-
+	if (bandera)
+	{
+		max = num
+		min =
+	}
 
 
 
