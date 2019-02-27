@@ -2,7 +2,7 @@ apuntes
 
 
 
-26/02
+26/02---------------------------------------------------
 
 contadores ---> variable + una constante
 
@@ -53,3 +53,33 @@ bandera ---> asignar a la variable con un valor, cuando ocurre ese valor; me pre
 	NaN == NaN es false
 
 	confirm: se pone como el prompt, es una ventana donde el usuario puede seleccionar si/no
+
+
+
+	27/02-----------------------------------------------
+
+
+
+	contador = 0;   //primer punto
+
+	while(contador < 10)  //segundo punto
+	{
+
+
+		contador = contador + 1   //tercer punto	
+	}
+
+
+
+
+	contador = 0;            //primer punto
+	continuar = "si"          
+
+	while(continuar != "si")(continuar != "no") //segundo punto
+	{
+
+		continuar = prompt();
+		contador = contador + 1   //tercer punto	
+	}
+
+numero modulo == 0 en el if
