@@ -5,9 +5,9 @@ function mostrar()
 	var contador = 0;
 	var acumulador = 0;
 	var respuesta = true;
-	var pares;
-	var impares;
-	var ceros;
+	var pares = 0;
+	var impares = 0;
+	var ceros = 0;
 	var promedioPos;
 	var sumaNeg;
 	var letraMax;
@@ -36,7 +36,8 @@ function mostrar()
 		document.write(numero);
 
 		acumulador = acumulador + pares;
-		
+
+
 
 
 
