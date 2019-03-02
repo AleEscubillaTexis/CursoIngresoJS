@@ -83,3 +83,22 @@ bandera ---> asignar a la variable con un valor, cuando ocurre ese valor; me pre
 	}
 
 numero modulo == 0 en el if
+
+
+02/03--------------------------------------------
+
+el do while hace y depsues evalua
+el while evalua y despues hace
+
+
+
+do 
+{
+	lo que hay que hacer, ej: tomar los datos
+}
+while();
+
+
+cuando en el enunciado dice hasta que el usuario quiera no hay que poner contador++, se usa la respuesta
+
+si el enunciado te especifica las vueltas del while si hay que poner el contador
