@@ -2,24 +2,25 @@ function mostrar()
 {
 	var letra;
 	var numero;
-	var respuesta = true;
 	var contador = 0;
 	var acumulador = 0;
+	var respuesta = true;
 	var pares;
 	var impares;
 	var ceros;
-	var promedioPositivos;
-	var sumaNegativos;
-	var maximo;
-	var minimo;
-
+	var promedioPos;
+	var sumaNeg;
+	var letraMax;
+	var letraMin;
+	var numeroMax;
+	var numeroMin;
 
 	while(respuesta = true)
 	{
-		letra = prompt("Ingrese la letra");
+		letra = prompt("Ingrese una letra");
 		while(isNaN(letra) == false)
 		{
-			letra = prompt("Error. Vuelva a ingresar la letra");
+			letra = prompt("Error. Vuelva a ingresar una letra");
 		}
 
 		numero = prompt("Ingrese un numero");
@@ -29,14 +30,21 @@ function mostrar()
 			numero = prompt("Error. Vuelva a ingresar un numero");
 			numero = parseInt(numero);
 		}
-		respuesta = confirm("¿Desea seguir ingresando valores?");
+
+		respuesta = confirm("¿Desea ingresar mas datos?");
+		document.write(letra);
+		document.write(numero);
+
+		acumulador = acumulador + pares;
+		
 
 
 
 
-
-		contador = contador + 1
+		contador++;
 	}
+
+
 
 
 
